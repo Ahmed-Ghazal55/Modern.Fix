@@ -103,7 +103,16 @@
     height: 100px;
 }
 .services {
+    width: 100% !important;
     overflow: hidden;
+}
+.services .service {
+    width: 100%;
+    overflow: hidden;
+    margin: 0%;
+}
+.img-fluid {
+    margin: 0%;
 }
 .service .service-text {
     position: absolute;
