@@ -10,8 +10,8 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Sakkal Majalla', sans-serif;
-    font-size: normal;
-    font-style: normal;
+    font-size: medium;
+    font-style: initial;
     text-transform: capitalize;
 }
 .navbar {
@@ -51,7 +51,7 @@
 .call-us .call-support {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -86,15 +86,19 @@
     flex-wrap: nowrap;
     text-align: right;
     justify-content: space-between;
-    gap: 0.5em;
+    gap: 0%;
+    padding-left: 3%;
 }
 .call-us .call-support .support .call-text {
     margin: 0%;
+    padding: 0%;
 }
 .call-us .call-support .support .call-num {
-    font-size: x-large;
+    font-size: 60px;
     color: #fa1717;
     font-weight: bolder;
+    margin: 0%;
+    padding: 0%;
 }
 .call-us .call-support .call-icon .bi {
     font-size: xx-large;
@@ -136,6 +140,7 @@
 }
 .service .service-text .caption {
     text-align: right;
+    font-size: 1.2em;
 }
 .about-us {
     text-align: right;
@@ -315,4 +320,45 @@ footer .foot-our-work ul li a{
     align-items: center;
     color: #fd3;
     font-size: 1.3em;
+}
+
+
+
+@media(max-width: 500px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+        gap: 0em;
+    }
+    .call-us {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .call-us .call-support {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1em;
+    }
 }
