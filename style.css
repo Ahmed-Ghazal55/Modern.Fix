@@ -103,7 +103,7 @@
     height: 100px;
 }
 .services {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .service .service-text {
     position: absolute;
