@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    gap: 0em;
+}
+.call-us {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.call-us .call-support {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+.call-us .call-support .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: 40px;
+    gap: 1em;
+    background-color: #ffdb3e;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: .2s ease;
+}
+.call-us .call-support .btn p {
+    margin: 0%;
+}
+.call-us .call-support .btn:hover {
+    background-color: #052fa1;
+    color: #fff;
+    transform: scale(1.03);
+    opacity: 90%;
+}
+.call-us .call-support .support {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: right;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+.call-us .call-support .support .call-text {
+    margin: 0%;
+}
+.call-us .call-support .support .call-num {
+    font-size: x-large;
+    color: #fa1717;
+    font-weight: bolder;
+}
+.call-us .call-support .call-icon .bi {
+    font-size: xx-large;
+}
+.call-us .brand {
+    width: 100px;
+    height: 100px;
+}
+.services {
+    overflow-x: hidden;
+}
+.service .service-text {
+    position: absolute;
+    text-align: right;
+    right: 10%;
+    top: 10%;
+    width: auto;
+}
+.service .service-text h1 {
+    font-size: 5em;
+}
+.service .service-text p {
+    font-size: x-large;
+}
