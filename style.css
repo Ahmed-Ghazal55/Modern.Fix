@@ -103,18 +103,23 @@
     height: 100px;
 }
 .services {
+    position: relative;
     width: 100% !important;
     overflow: hidden;
     text-align: right;
-    justify-content: end;
+    margin: 0%;
+    padding: 0%;
 }
 .services .service {
     width: 100%;
     overflow: hidden;
     margin: 0%;
+    padding: 0%;
 }
 .img-fluid {
     margin: 0%;
+    width: 100%;
+    padding: 0%;
 }
 .service .service-text {
     position: absolute;
@@ -123,6 +128,8 @@
     top: 10%;
     width: 100%;
     font-size: 1.3rem;
+    margin: 0%;
+    padding: 0%;
 }
 .service .service-text .caption {
     text-align: right;
