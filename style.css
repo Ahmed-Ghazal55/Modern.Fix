@@ -105,6 +105,8 @@
 .services {
     width: 100% !important;
     overflow: hidden;
+    text-align: right;
+    justify-content: end;
 }
 .services .service {
     width: 100%;
