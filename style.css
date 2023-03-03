@@ -104,22 +104,24 @@
 }
 .services {
     position: relative;
-    width: 100% !important;
+    width: 100%;
     overflow: hidden;
     text-align: right;
     margin: 0%;
     padding: 0%;
+    gap: 0%;
 }
 .services .service {
+    position: relative;
     width: 100%;
-    overflow: hidden;
     margin: 0%;
     padding: 0%;
 }
 .img-fluid {
     margin: 0%;
-    width: 100%;
     padding: 0%;
+    width: 100%;
+    position: relative;
 }
 .service .service-text {
     position: absolute;
