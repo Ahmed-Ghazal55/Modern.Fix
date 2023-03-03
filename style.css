@@ -8,7 +8,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
     font-size: small;
     font-style: normal;
     text-transform: capitalize;
@@ -30,6 +30,15 @@
     margin: 0%;
     padding: 0%;
     gap: 0em;
+}
+.list-item a .bi-whatsapp {
+    color: #00b100;
+}
+.list-item a .bi-instagram {
+    color: #e3569a;
+}
+.bi-whatsapp {
+    color: #00b100;
 }
 .call-us {
     display: flex;
@@ -101,11 +110,188 @@
     text-align: right;
     right: 10%;
     top: 10%;
-    width: auto;
+    width: 100%;
+    font-size: 1.3rem;
 }
-.service .service-text h1 {
-    font-size: 5em;
+.service .service-text .caption {
+    text-align: right;
 }
-.service .service-text p {
-    font-size: x-large;
+.about-us {
+    text-align: right;
+    padding: 3%;
+}
+.about-us .h1{
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+.accordion-item {
+    text-align: right;
+}
+
+
+.contact-us{
+    display: flex;
+    min-height: 100vh;
+}
+.contact-us iframe{
+    width: 100%;
+    height: 100vh;
+}
+.contact-us .contact-us-inf{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    flex-wrap: nowrap;
+    left: 20%;
+    width: 45%;
+    height: 100%;
+    text-align: right;
+    background-color: #002044;
+    opacity: 85%;
+}
+.contact-us .contact-us-inf h4{
+    padding: 13% 10% 0% 7%;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 250;
+}
+.contact-us .contact-us-inf h1{
+    margin: 2%;
+    padding: 8%;
+    padding-top: 2%;
+    font-size: 2.8em;
+    color: #fff;
+    font-weight: 500;
+}
+.contact-us .contact-us-inf .contact-us-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    padding-right: 10%;
+    text-align: right;
+}
+.contact-us .contact-us-inf .contact-us-list .contact-us-item {
+    padding-bottom: 5%;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    text-align: end;
+}
+.contact-us .contact-us-inf .contact-us-list .contact-us-item p {
+    font-size: 1.2em;
+}
+.contact-us .contact-us-inf .contact-us-list .contact-us-item i {
+    color: #ffdb3e;
+    font-size: large;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 85vh;
+    background-color: #002044;
+    padding: 1% 1%;
+    text-align: right;
+    gap: 5%;
+}
+footer .foot-title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    text-align: right;
+    gap: 10%;
+    padding: 7%;
+    color: #fffff9;
+    font-size: 1.3em;
+    padding-bottom: 5%;
+}
+footer .foot-title h2{
+    font-weight: 200;
+}
+footer .foot-media{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+    grid-auto-rows: 10%;
+    text-align: right;
+    align-items: center;
+    padding: 1% 7%;
+}
+footer .foot-media .socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5px;
+    align-items: center;
+    font-size: .9em;
+    width: 30%;
+    color: #fffff9;
+    width: 30%;
+}
+footer .foot-media .socialMediaIcons a{
+    color: #fff;
+    padding: 3px;
+    margin: 3px;
+}
+footer .foot-media .socialMediaIcons a i{
+    color: #fff;
+}
+footer .foot-media .foot-sub-email{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-right: 10%;
+}
+footer .foot-media .foot-sub-email .inp-mail{
+    padding: 5%;
+    width: 80%;
+    height: 10px;
+}
+footer .foot-media .foot-sub-email .btn{
+    width: 17%;
+}
+footer .foot-our-work{
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    width: 100%;
+    align-items: center;
+}
+footer .foot-our-work p{
+    font-size: 1.2em;
+    font-weight: 250;
+    color: #999;
+    padding: 2px;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 4%;
+}
+footer .foot-our-work ul{
+    text-align: center;
+}
+footer .foot-our-work ul li{
+    list-style: none;
+    display: inline-block;
+    padding: .5% 1.5%;
+}
+footer .foot-our-work ul li a{
+    text-align: center;
+    align-items: center;
+    color: #fd3;
+    font-size: 1.3em;
 }
