@@ -10,9 +10,9 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Sakkal Majalla', sans-serif;
-    font-size: medium;
+    font-size: 1.06em;
     font-style: initial;
-    text-transform: capitalize;
+    text-shadow: #002044;
 }
 .navbar {
     display: flex;
@@ -66,8 +66,8 @@
     align-items: center;
     text-align: center;
     gap: 1em;
-    width: 200px;
-    height: 45px;
+    width: 300px;
+    height: auto;
     background-color: #ffdb3e;
     text-decoration: none;
     border-radius: 5px;
@@ -182,6 +182,7 @@
     text-align: right;
     background-color: #002044;
     opacity: 85%;
+    overflow-y: scroll;
 }
 .contact-us .contact-us-inf h4{
     padding: 13% 10% 0% 7%;
@@ -225,93 +226,24 @@
 }
 
 
-footer{
+footer {
+    position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: 85vh;
-    background-color: #002044;
-    padding: 1% 1%;
-    text-align: right;
-    gap: 5%;
-}
-footer .foot-title{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row-reverse;
     flex-wrap: nowrap;
-    text-align: right;
-    gap: 10%;
-    padding: 7%;
-    color: #fffff9;
-    font-size: 1.3em;
-    padding-bottom: 5%;
-}
-footer .foot-title h2{
-    font-weight: 200;
-}
-footer .foot-media{
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
     width: 100%;
-    height: 30%;
-    grid-auto-rows: 10%;
-    text-align: right;
-    align-items: center;
-    padding: 1% 7%;
-}
-footer .foot-media .socialMediaIcons{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2.5px;
-    align-items: center;
-    font-size: .9em;
-    width: 30%;
-    color: #fffff9;
-    width: 30%;
-}
-footer .foot-media .socialMediaIcons a{
-    color: #fff;
-    padding: 3px;
-    margin: 3px;
-}
-footer .foot-media .socialMediaIcons a i{
-    color: #fff;
-}
-footer .foot-media .foot-sub-email{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 30%;
-    margin-right: 10%;
-}
-footer .foot-media .foot-sub-email .inp-mail{
+    min-height: 60vh;
+    background-color: #002044;
     padding: 5%;
-    width: 80%;
-    height: 10px;
+    text-align: right;
+    color: #ffdb3e;
+    box-sizing: border-box;
 }
-footer .foot-media .foot-sub-email .btn{
-    width: 17%;
+footer .row .col .row {
+    text-align: right !important;
 }
-footer .foot-our-work{
-    display: flex;
-    flex-direction: column;
-    padding: 7%;
-    width: 100%;
-    align-items: center;
-}
-footer .foot-our-work p{
-    font-size: 1.2em;
-    font-weight: 250;
-    color: #999;
-    padding: 2px;
-    line-height: normal;
-    text-align: center;
-    padding-bottom: 4%;
+footer .row .col .flex-row {
+    text-align: right !important;
 }
 footer .foot-our-work ul{
     text-align: center;
@@ -321,7 +253,7 @@ footer .foot-our-work ul li{
     display: inline-block;
     padding: .5% 1.5%;
 }
-footer .foot-our-work ul li a{
+footer .foot-our-work ul li {
     text-align: center;
     align-items: center;
     color: #fd3;
@@ -330,9 +262,9 @@ footer .foot-our-work ul li a{
 
 
 
-@media(max-width: 500px) {
+@media(max-width: 655px) {
     * {
-        font-size: x-small;
+        font-size: small;
     }
     .navbar {
         display: flex;
@@ -362,6 +294,7 @@ footer .foot-our-work ul li a{
         text-align: center;
     }
     .call-us .call-support {
+        position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -370,15 +303,20 @@ footer .foot-our-work ul li a{
         text-align: center;
         gap: 1em;
     }
+    .call-us .call-support .btn {
+        position: relative;
+        width: 100% !important;
+    }
     .services {
-        min-height: 50vh;
+        height: 50vh;
     }
     .services .service {
-        height: 100%;
+        height: 40vh;
     }
     .img-fluid {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     .service .service-text {
         display: flex;
@@ -390,5 +328,22 @@ footer .foot-our-work ul li a{
         flex-wrap: wrap;
         justify-content: end;
         text-align: right;
+    }
+    .contact-us {
+        position: relative;
+    }
+    .contact-us .contact-us-inf {
+        position: absolute;
+        font-size: smaller;
+        right: 0%;
+        top: 0%;
+        height: 80%;
+        width: 60%;
+    }
+    .contact-us .contact-us-inf .contact-us-list {
+        font-size: 0.8em;
+    }
+    .contact-us .contact-us-inf .contact-us-list .contact-us-item i {
+        font-size: small;
     }
 }
