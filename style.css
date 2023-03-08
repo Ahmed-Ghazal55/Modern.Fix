@@ -9,10 +9,13 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Sakkal Majalla', sans-serif;
-    font-size: 1.06em;
+    font-family: 'Droid Arabic Kufi', serif;
+    font-size: 1em;
     font-style: initial;
     text-shadow: #002044;
+}
+body {
+    position: relative;
 }
 .navbar {
     display: flex;
@@ -39,58 +42,61 @@
     color: #e3569a;
 }
 .bi-whatsapp {
-    color: #00b100;
+    color: #ffffff;
+}
+.con-btn {
+    position: sticky;
+    z-index: 55;
+    top: 80%;
+    margin-right: 80%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    height: auto;
+}
+.con-btn .btn-sticky {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    width: 98%;
+    height: auto;
+    background-color: #25CF43;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .2s ease;
+    border: 1px solid #fff;
+}
+.con-btn .btn-sticky i {
+    padding: 0;
+}
+.con-btn .btn-sticky:hover {
+    border: 1px solid #000;
+    color: #fff;
+    transform: scale(1.01);
+    opacity: 90%;
 }
 .call-us {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
-.call-us .call-support {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    gap: 1em;
-    padding-left: 5%;
+.call-us .brand {
+    width: 200px;
+    height: 200px;
+    margin: 5%;
+    margin-top: 0%;
 }
-.call-us .call-support .btn {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1em;
-    width: 300px;
-    height: auto;
-    background-color: #ffdb3e;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: .2s ease;
+.call-us .support {
+    margin: 5%;
+    margin-top: 0%;
 }
-.call-us .call-support .btn p {
-    margin: 0%;
-    padding: 1%;
-}
-.call-us .call-support .btn:hover {
-    background-color: #052fa1;
-    color: #fff;
-    transform: scale(1.03);
-    opacity: 90%;
-}
-.call-us .call-support .support {
+/* .call-us .call-support .support {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    text-align: right;
-    justify-content: space-between;
-    gap: 0%;
-    padding-left: 3%;
 }
 .call-us .call-support .support .call-text {
     margin: 0%;
@@ -105,11 +111,8 @@
 }
 .call-us .call-support .call-icon .bi {
     font-size: xx-large;
-}
-.call-us .brand {
-    width: 100px;
-    height: 100px;
-}
+} */
+
 .services {
     position: relative;
     width: 100%;
@@ -160,9 +163,8 @@
 .accordion-item {
     text-align: right;
 }
-
-
 .contact-us{
+    position: relative;
     display: flex;
     min-height: 100vh;
 }
@@ -292,9 +294,9 @@ footer .foot-our-work ul li {
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 10%;
     }
     .call-us .call-support {
-        position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -302,10 +304,6 @@ footer .foot-our-work ul li {
         align-items: center;
         text-align: center;
         gap: 1em;
-    }
-    .call-us .call-support .btn {
-        position: relative;
-        width: 100% !important;
     }
     .services {
         height: 50vh;
@@ -345,5 +343,12 @@ footer .foot-our-work ul li {
     }
     .contact-us .contact-us-inf .contact-us-list .contact-us-item i {
         font-size: small;
+    }
+}
+
+@media(max-width: 220px){
+    .call-us .brand {
+        width: 50px;
+        height: 50px;
     }
 }
