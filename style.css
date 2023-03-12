@@ -64,7 +64,7 @@ body {
     height: auto;
     background-color: #25CF43;
     text-decoration: none;
-    border-radius: 55px 10px;
+    border-radius: 25px;
     transition: .2s ease;
     border: 1px solid #fff;
 }
