@@ -138,6 +138,15 @@ body {
     padding: 0%;
     width: 100%;
     position: relative;
+    opacity: 100%;
+    object-fit: contain;
+}
+.single-img {
+    opacity: 100%;
+}
+.single-img img.img-fluid{
+    opacity: 150%;
+    object-fit: contain;
 }
 .service .service-text {
     position: absolute;
@@ -163,7 +172,7 @@ body {
     color: #131313;
     padding: 1%;
     font-weight: 800;
-    text-shadow: #FC0 1px 0 10px;
+    text-shadow: rgb(160, 160, 160) 1px 0 10px;
 }
 .about-us {
     text-align: right;
